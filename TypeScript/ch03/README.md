@@ -135,5 +135,102 @@ class Person3 {
 let jack3 : Person3 = new Person3('Jack', 32)
 console.log(jack3)
 ```
+</br>
 
+> 인터페이스 구현
+
+타입스크립트 클래스는 인터페이스를 구현할 수 있다 -> implements 사용
+
+```md
+Class __클래스 이름__ implements __인터페이스 이름__ {
+    
+}
+
+```
+
+인터페이스는 속성이 있어야 한다는 규약(spec)에 불과할 뿐 물리적으로 해당 속성을 만들지 않는다. 따라서 클래스 몸통에는 반드시 인터페이스가 정의하고 있는 속성을 멤버 속성으로 포함해야 한다.
+```ts
+interface IPerson4 {
+    name: string
+    age?: number
+}
+
+class Person4 implements IPerson4 {
+    name: string
+    age: number
+}
+```
+응용
+```ts
+interface IPerson4 {
+    name: string
+    age?: number
+}
+
+class Person4 implements IPerson4 {
+    constructor(public name: string, public age?: number) {}
+}
+let jack4: Iperson4 = new Person4('Jack', 32)
+console.log(jack4)      // Person4 { name: 'Jack', age: 32 }
+```
+</br>
+
+> 추상 클래스
+
+`abstract` 키워드를 사용해 추상 클래스를 만들 수 있다. 추상 클래스는 자신의 속성이나 메서드 앞에 abstract를 붙여 나를 상속하는 다른 클래스에서 이 속성이나 메서드를 구현하게 한다
+
+```text
+abstract class 클래스 이름 {
+    abstract 속성 이름: 속성 타입
+    abstract 메서드 이름() {}
+}
+```
+
+추상 클래스 예
+```ts
+abstract class AbstractPerson5 {
+    abstract name: string
+    constructor(public age?: number) {}
+}
+```
+
+> 클래스의 상속
+
+`extends` 키워드를 사용
+```text
+class 상속 클래스 extends 부모 클래스 {···}
+```
+
+AbstractPerson5 추상클래스를 상속 -> name 속성 구현
+```ts
+class Person5 extends APerson5 {
+    constructor(public name: string, age?: number) {
+        super(age)
+    }
+}
+let jack5 : Person5 = new Person5('Jack', 32)
+console.log(jack5)      // Person5 { name: 'Jack', age: 32 }
+```
+</br>
+
+> static 속성
+
+```text
+class 클래스 이름 {
+    static 정적 속성 이름: 속성 타입
+}
+```
+예시
+```ts
+calss A {
+    static initValue = 1
+}
+
+let initVal = A.initValue       // 1
+```
+</br>
+</br>
+</br>
+
+#### 03-4 객체의 비구조화 할당문
 
