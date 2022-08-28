@@ -57,4 +57,11 @@ dtypes: float64(4), object(1)
 3. 매출액을 종속변수, TV, Radio, Social Media의 예산을 독립변수로 하여 회귀분석을 수행하였을 때, 세 개의 독립변수의 회귀계수를 큰 것에서부터 작은 것 순으로 기술하시오. 
     - 분석 시 결측치가 포함된 행은 제거한 후 진행하며, 회귀계수는 소수점 넷째 자리 이하는 버리고 소수점 셋째 자리까지 기술하시오. (답안 예시) 0.123
 
+            LinearRegression().fit(X,y)
+            coef_ - > 계수
+            intercept_ -> 절편
             
+            math.ceil() -> 올림
+            math.floor() -> 내림
+            math.trunc() -> 버림
+            round(숫자, 자리수) - > 반올림
