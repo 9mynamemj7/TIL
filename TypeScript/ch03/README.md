@@ -2,7 +2,7 @@
 </br>
 
 #### 03-1 타입스크립트 변수 선언문
-
+---
 > 자바스크립트와 타입스크립트의 기본 타입
 
 |유형|자바스크립트 타입|타입스크립트 타입|
@@ -94,7 +94,7 @@ printMe(ai)     // Jack 32
 ```
 
 #### 03-3 객체와 클래스
-
+---
 > 클래스 선언문
 
 ```
@@ -233,4 +233,27 @@ let initVal = A.initValue       // 1
 </br>
 
 #### 03-4 객체의 비구조화 할당문
+---
 
+
+
+</br>
+
+#### 03-5 객체의 타입 변환
+
+> 타입변환
+
+```ts
+let person: object = {name: "Jack", age: 32};
+person.name
+//--> 오류
+let person: object = {name: "Jack", age: 32};
+(<{name: string}>person).name
+```
+</br>
+
+> 타입단언
+```text
+1. (<타입>객체)
+2. (객체 as 타입)
+```
