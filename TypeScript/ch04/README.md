@@ -40,3 +40,42 @@ let add = function(a, b) {return a+b}
 
 #### 04-3 화살표 함수와 표현식 문
 ---
+
+```md
+* 기본형
+
+const 함수 이름 = (매개변수1: 타입1, 매개변수2: 타입2) : 반환 타입 => 함수 몸통
+```
+```ts
+const arrow1 = (a: number, b: number) : number => {retrun a+b}  // 실행문 방식 몸통
+const arrow1 = (a: number, b: number) : number => a+b           // 표현식 문 방식 몸통
+```
+</br></br>
+
+#### 04-4 일등 함수
+---
+
+> __콜백함수__: 매개변수 형태로 동작하는 함수
+
+
+
+```md
+* 기본형
+const f = (callback: () => void): void => callback()
+```
+```ts
+// 현실적인 예시
+export const init = (callback: () => void): void => {
+    console.log('default initialization finished.')
+    callback()
+    console.log('all initialization finished.')
+}
+
+import {init} from './init'
+init(() => console.log('custom initialization finished.'))
+```
+</br></br>
+
+#### 04-5 함수 구현 기법
+---
+
