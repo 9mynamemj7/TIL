@@ -79,3 +79,15 @@ init(() => console.log('custom initialization finished.'))
 #### 04-5 함수 구현 기법
 ---
 
+> 매개변수 기본값 지정
+```ts
+// 예시
+export type Person = {name:string, age: number}
+
+export const makePerson = (name: string, age: number = 10): Person => {
+    const person = {name: name, age: age} // const person = {name, age} 로 단축구문 사용가능
+    return person
+}
+console.log(makePerson("Jack")) //{ name: 'Jack', age: 10 }
+console.log(makePerson("Jack", 33))//{ name: 'Jack', age: 33 }
+```
