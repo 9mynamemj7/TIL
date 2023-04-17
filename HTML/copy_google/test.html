@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<style>
+    header {
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    nav a {
+        color: #5f6368;
+        font-size: 14px;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* 메인 영역 */
+    main {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    input[type="text"] {
+        border: none;
+        padding: 10px;
+        width: 500px;
+        font-size: 18px;
+        border-radius: 24px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"]:focus {
+        outline: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    button[type="submit"],
+    button {
+        background-color: #f2f2f2;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #5f6368;
+        margin-left: 10px;
+        cursor: pointer;
+        border-radius: 24px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    button[type="submit"]:hover,
+    button:hover {
+        background-color: #e8e8e8;
+    }
+
+    ol {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+        margin-bottom: 50px;
+    }
+
+    ol li {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    /* 푸터 */
+    footer {
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 -2px
+    4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #5f6368;
+    font-size: 14px;
+    }
+
+    footer a {
+        color: #5f6368;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+<head>
+	<title>구글</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Gmail</a></li>
+				<li><a href="#">이미지</a></li>
+				<li><a href="#">드라이브</a></li>
+				<li><a href="#">더보기</a></li>
+			</ul>
+			<a href="#">Google에 대하여</a>
+			<a href="#">로그인</a>
+		</nav>
+	</header>
+	<main>
+		<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google 로고">
+		<form>
+			<input type="text" name="검색어" placeholder="Google 검색 또는 URL 입력">
+			<button type="submit">Google 검색</button>
+			<button>행운의 날</button>
+		</form>
+		<p>대한민국의 검색어 순위</p>
+		<ol>
+			<li>유튜브</li>
+			<li>네이버</li>
+			<li>구글</li>
+			<li>다음</li>
+			<li>카카오</li>
+		</ol>
+	</main>
+	<footer>
+		<ul>
+			<li><a href="#">광고</a></li>
+			<li><a href="#">비즈니스</a></li>
+			<li><a href="#">Google 정보</a></li>
+			<li><a href="#">검색의 원리</a></li>
+			<li><a href="#">설정</a></li>
+		</ul>
+		<p>© Google, Inc. 2023</p>
+	</footer>
+</body>
+</html>
