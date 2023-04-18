@@ -8,4 +8,6 @@ npm init -y
 npm install express --save
 npm install react react-dom
 
+npm install body-parser -s
+
 touch index.js
