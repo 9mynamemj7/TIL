@@ -16,7 +16,7 @@ npm run node index.js
 
 - [NodeJs와 ExpressJs 다운 및 몽고DB연결](./boiler-plate/index.js)
 - [몽고DB Model & Schema](./boiler-plate/models/User.js)
-
+- [PostMan 회원가입기능](./boiler-plate/index.js)
 
 ### 오류해결
 
