@@ -11,44 +11,54 @@
 </head>
 <body class="Wtext">
     <header>
-        <nav>
-            <ul class="nav">
-                <li id = "nav_right">프로필</li>
-                <li id = "nav_right">더보기</li>
-                <li id = "nav_right">이미지</li>
-                <li id = "nav_right">Gmail</li>
-                <li id = "nav_left">스토어</li>
-                <li id = "nav_left">Google 정보</li>
-            </ul>
-        </nav>
     </header>
-    <main id="main">
-        <div>
-            <span class="center" id="center">
-                <img src="./src/google_G.svg">
-                <div id="search_bar">
-                    <div>
-                        <p id="search_icon"><img src="./src/search.svg"></p>
-                        <input type="text" id="search_text">
-                        <button id="button1">
-                            <img src="./src/mic.svg"></button>
-                        <button id="button2">
-                            <img src="./src/camera.svg"></button>
-                    </div>
+    <nav>
+        <ul class="nav">
+            <li class = "nav_right">프로필</li>
+            <li class = "nav_right">더보기</li>
+            <li class = "nav_right">이미지</li>
+            <li class = "nav_right">Gmail</li>
+            <li class = "nav_left">스토어</li>
+            <li class = "nav_left">Google 정보</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="center">
+            <div>
+                <span id="googleFont">Google</span>
+            </div>
+            <div>
+                <div class="search-bar">
+                    <span id="searchIcon"><img src="./src/search.svg"></span>
+                    <span><input type="text" style="border:none"></span>
+                    <span><button class="opacity-button">
+                        <img src="./src/mic.svg">
+                        </button><button class="opacity-button">
+                        <img src="./src/camera.svg">
+                        </button></span>
                 </div>
-            </span>
-            <span class="center" id="center_btn">
-                <button id="button1">
-                    Google Search
-                </button>
-                <button id="button2">
-                    I'm Feeling Lucky
-                </button>
-            </span>
-        </div>
-        <div>
-            google offered in: 한국어
+            </div>
+            <div>
+                <div>
+                    <button class="button">
+                        Google Search
+                    </button>
+                    <button class="button">
+                        I'm Feeling Lucky
+                    </button>
+                </div>
+                <div>
+                    <span>
+                        Google offered in:
+                    </span><span id="lang">
+                        한국어
+                    </span>
+                </div>
+            </div>
         </div>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
