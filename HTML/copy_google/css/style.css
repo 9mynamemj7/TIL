@@ -42,6 +42,7 @@ main {
     border-radius: 20px;
     margin: 10px;
     padding: 5px;
+    pointer-events: auto;
 }
 
 #searchIcon {
@@ -50,9 +51,11 @@ main {
 }
 
 input {
-    width: 75%;
+    width: 70%;
     background: transparent;
     outline: none;
+    font-size: large;
+    color: white;
 }
 
 .button {

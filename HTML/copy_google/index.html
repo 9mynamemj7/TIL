@@ -30,7 +30,14 @@
             <div>
                 <div class="search-bar">
                     <span id="searchIcon"><img src="./src/search.svg"></span>
-                    <span><input type="text" style="border:none"></span>
+                    <span>
+                        <input type="text" style="border:none" list="sub-list">
+                        <datalist id="sub-list">
+                            <option value="this is a browser">
+                            <option>목록</option>
+                            <option>목록</option>
+                        </datalist>
+                    </span>
                     <span><button class="opacity-button">
                         <img src="./src/mic.svg">
                         </button><button class="opacity-button">
