@@ -60,6 +60,7 @@ input {
     padding: 10px;
     background-color: rgba(56, 56, 56, 0.651);
     color: white;
+    border: none;
 }
 
 #lang {
