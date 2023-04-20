@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const port = 5000
 const bodyParer = require('body-parser');
+
+const config = require('./config/key');
+
 // 모델 호출
 const { User } = require('./models/User')
 
@@ -23,7 +26,7 @@ mongoose.connect(myHostNum).then(() => console.log('MongoDB Connected...'))
 
 // 라우팅
 app.get('/', (req, res) => {
-  res.send("Hello")
+  res.send("Hello hhh")
 })
 
 app.post('/register', async (req, res) => {
