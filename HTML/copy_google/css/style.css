@@ -42,6 +42,7 @@ main {
     border-radius: 20px;
     margin: 10px;
     padding: 5px;
+    position: relative;
 }
 
 #searchIcon {
@@ -53,6 +54,8 @@ input {
     width: 75%;
     background: transparent;
     outline: none;
+    margin-bottom: 1.5px;
+    font-size: 17px;
 }
 
 .button {
@@ -75,4 +78,31 @@ input {
     border: 0;
     background-color: transparent;
     filter: invert(50%);
+}
+
+
+.search-bar ul.recommendations {
+	display: none;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background-color: rgba(0, 0, 0, 0.89);
+	border: 2px solid white;
+    border-top: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.search-bar ul.recommendations li {
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.search-bar input[type="text"]:focus + ul.recommendations {
+	display: block;
 }
