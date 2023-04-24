@@ -3,6 +3,8 @@ const bcrypt = require('bcrypt');
 const saltRouds = 10;
 const jwt = require('jsonwebtoken');
 const nodemon = require('nodemon');
+const { resolve } = require('path');
+const { rejects } = require('assert');
 
 const userSchema = mongoose.Schema({
     name: {
@@ -58,11 +60,11 @@ userSchema.methods.generateToken = async function(cb) {
     // user._id + 'sercretToken' = token
 
     user.token = token
-    user.save(function(err, user) {
-        if(err) return cb(err)
-        cb(null, user)
-    })
+    const result = await user.save();
+    if(err) return cb(err)
 }
+
+
 
 const User = mongoose.model('User', userSchema)
 
