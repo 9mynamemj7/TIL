@@ -2,11 +2,6 @@ body {
     background-color: rgba(0, 0, 0, 0.89);
 }
 
-input {
-    background-color: transparent;
-    outline-color: transparent;
-}
-
 .Wtext {
 color:white;
 }
@@ -56,6 +51,9 @@ input {
     outline: none;
     margin-bottom: 1.5px;
     font-size: 17px;
+    background-color: transparent;
+    outline-color: transparent;
+    vertical-align: super;
 }
 
 .button {
