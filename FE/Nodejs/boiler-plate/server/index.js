@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Connect MongoDB
-const myData = require('./personal.json');
+const myData = require('../personal.json');
 const mongoose = require('mongoose');
 
 
