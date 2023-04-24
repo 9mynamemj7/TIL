@@ -12,3 +12,4 @@
 - [인라인과 블록2](https://memostack.tistory.com/275)
 - [중앙정렬](https://webdir.tistory.com/31)
 - [class와 id](https://heinafantasy.com/155)
+- [인라인 요소 속성](https://aboooks.tistory.com/171)
