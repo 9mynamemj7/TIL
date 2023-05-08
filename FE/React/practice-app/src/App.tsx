@@ -1,5 +1,5 @@
 import React from 'react';
-import First from './pages/First.tsx';
+import First from './pages/First';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 
 class App extends React.Component {
