@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ReactDOM from 'react-dom/client';
 
 const realTime = () => {
@@ -15,10 +15,10 @@ const element = <h1>Hello, {user.firstName} {user.lastName}</h1>;
 class Main extends React.Component {
     render() {
         return (
-            <div>
+            <Fragment>
                 <h1>{element}</h1>
                 <h1>it is {realTime()}</h1>
-            </div>
+            </Fragment>
         );
     }
 }
