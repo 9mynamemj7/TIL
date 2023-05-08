@@ -1,0 +1,2 @@
+// hints.js
+// Author: danju
