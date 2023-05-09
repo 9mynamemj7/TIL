@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
-export const initialState: number = 0;
-const Example = () => {
+import React, { useEffect, useState } from 'react'
+
+
+const NowTime = () => {
+  const [count, setCount] = useState(0);
     
-    const [state, setState] = useState(initialState);
+  useEffect(() => {
+    async function timeSleep() {
+      await setTimeout(()=>{setCount(count + 1)}, 1000)
+    }
+    timeSleep()
+  },[count])
+  return (
+    <div>
+      <p>{count} 초 {Date()}</p>
+    </div>
+  )
+}
 
-    return (
-        <div>
-            <p>{`count: ${state}`}</p>
-            <button onClick={()=>setState(state+1)}>+</button>
-            <button onClick={()=>setState(state-1)}>-</button>
-        </div>
-    )
-};
-
-
-export default Example;
+export default NowTime
