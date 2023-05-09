@@ -5,12 +5,14 @@ const First = () => {
   const [count, setCount] = useState(0);
     
   useEffect(() => {
-    setCount(count + 1)
+    async function timeSleep() {
+      await setTimeout(()=>{setCount(count + 1)}, 1000)
+    }
+    timeSleep()
   },[count])
   return (
     <div>
-      <p>{count}</p>
-      <button onClick={()=>setCount(count + 1)}>+</button>
+      <p>{count} 초 {Date()}</p>
     </div>
   )
 }
