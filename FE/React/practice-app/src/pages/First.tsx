@@ -1,22 +1,33 @@
-import React, { Fragment } from 'react';
-import NowTime from '../components/NowTime';
+import React, { useEffect, useState } from 'react';
 
-const user = {
-  firstName : 'Rose',
-  lastName : 'Taylor'
+// const user = {
+//   firstName : 'Rose',
+//   lastName : 'Taylor'
+// };
+
+// const element = <h1>Hello, {user.firstName} {user.lastName}</h1>;
+
+const First = () => {
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    const qustn = setInterval(()=>{
+      if (count) {
+        setCount(count + 1);
+      }
+    }, 1000);
+  }, [count]);
+
+  return (
+    <div>
+      <h2>
+        {count}
+      </h2>
+      <button onClick={()=>setCount(count+1)}>+</button>
+      <button onClick={()=>setCount(count-1)}>-</button>
+    </div>
+  );
 };
 
-const element = <h1>Hello, {user.firstName} {user.lastName}</h1>;
 
-class First extends React.Component {
-  render() {
-    return (
-      <Fragment>
-        <h2>
-          {element} it is <NowTime />
-        </h2>
-      </Fragment>
-    )
-  }
-};
 export default First;
