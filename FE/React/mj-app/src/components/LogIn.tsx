@@ -19,16 +19,40 @@ export const LogIn = () => {
   };
 
   // 버튼 클릭 후 변수 저장
-  const onIdSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const onIdSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setSubmitedName(userName)
-    setSubmitedPassword(userPassword)
-  };
+    setSubmitedName(userName);
+    setSubmitedPassword(userPassword);
+
+    // 요청 보내기
+    const response = await fetch('http://13.209.49.228:3001/login', {
+      method: 'POST',
+      body: JSON.stringify({ userName, userPassword }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).then(
+      (value) => {
+        console.log(value)
+      }
+    );
+
+    // 응답 처리
+    // if (response.status == 200) {
+    //   // 응답 처리 성공
+    //   // const data = await response.json();
+    //   // console.log(data);
+    //   console.log("ok")
+    // } else {
+    //   // 에러 처리
+    //   console.log('Error:', response.status);
+    // }
+    }
 
   // Return
   return (
     <div>
-      <form onSubmit={onIdSubmit}>
+      <form method="post" onSubmit={onIdSubmit}>
         <input
           value={userName}
           onChange={onIdChange}
@@ -41,7 +65,7 @@ export const LogIn = () => {
         type="password"
         placeholder="비밀번호"
         />
-        <button>로그인</button>
+        <button type='submit'>로그인</button>
       </form>
 
       
