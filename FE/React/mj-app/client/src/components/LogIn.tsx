@@ -33,13 +33,13 @@ export const LogIn = () => {
           value={userName}
           onChange={onIdChange}
           type="text"
-          placeholder="이름"
+          placeholder="아이디"
         />
         <input
         value={userPassword}
         onChange={onPwChange}
         type="password"
-        placeholder="이름"
+        placeholder="비밀번호"
         />
         <button>로그인</button>
       </form>
