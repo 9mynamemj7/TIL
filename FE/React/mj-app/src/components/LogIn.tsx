@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import BasicButtons from "../components/ui/button";
 
-export const LogIn = () => {
+const LogIn = () => {
   
   // ID 부분
   const [userName, setUserName] = useState("");
@@ -25,18 +26,18 @@ export const LogIn = () => {
     setSubmitedPassword(userPassword);
 
     // 요청 보내기
-    const response = await fetch('http://13.209.49.228:3001/login', {
-      method: 'POST',
-      body: JSON.stringify({ userName, userPassword }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }).then(
-      (value) => {
-        console.log(value)
-      }
-    );
-
+    // const response = await fetch('/login', {
+    //   method: 'POST',
+    //   body: JSON.stringify({ userName, userPassword }),
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    // }).then(
+    //   (value) => {
+    //     console.log(value)
+    //   }
+    // );
+    
     // 응답 처리
     // if (response.status == 200) {
     //   // 응답 처리 성공
@@ -66,6 +67,9 @@ export const LogIn = () => {
         placeholder="비밀번호"
         />
         <button type='submit'>로그인</button>
+        <div>
+          <BasicButtons />
+        </div>
       </form>
 
       
@@ -73,3 +77,5 @@ export const LogIn = () => {
     </div>
   );
 }
+
+export default LogIn;
