@@ -8,3 +8,6 @@
 - [useEffect훅에서 비동기](https://velog.io/@he0_077/useEffect-%ED%9B%85%EC%97%90%EC%84%9C-async-await-%ED%95%A8%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 - [폼에 입력된값 관리](https://sangjuntech.tistory.com/12)
 - [vscode ssh접속 오류 권한문제 해결 windows](https://tipsoda.com/2600)
+- [MongoDB 시작하기](https://developer88.tistory.com/entry/MongoDB-Atlas-%EB%AC%B4%EB%A3%8C-%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+- [Dotenv 사용](https://www.daleseo.com/js-dotenv/)
+- [Mongoose 사용](https://velog.io/@guri_coding/mongoose-%EA%B3%B5%EB%B6%80%ED%95%98%EA%B8%B0-3-Connections-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0)
