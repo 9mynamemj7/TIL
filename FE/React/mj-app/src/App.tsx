@@ -5,6 +5,7 @@ import { AppProvider } from './providers/app'
 import { RecoilRoot } from "recoil";
 import * as m$ from '@mediaiplus/ui';
 
+// http://medi-ui.dev.mediaiplus.com/
 
 function App() {
   return (

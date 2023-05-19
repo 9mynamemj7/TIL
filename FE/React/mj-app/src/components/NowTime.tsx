@@ -24,7 +24,7 @@ const NowTime = () => {
     if (typeof time === "string") {
       return "로그인 만료"
     } else if (typeof time === "object") {
-      return `${time[0]}분 ${time[1]}초`
+      return `만료 시간까지 ${time[0]}분 ${time[1]}초`
     }
     return ""
   }
